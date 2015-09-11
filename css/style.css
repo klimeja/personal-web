@@ -1,0 +1,66 @@
+.logo-text{
+    position: relative;
+    font-family: "Bowlby One SC";
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #333;
+    line-height: 1;
+    float: right;
+    padding-top: 10px;
+}
+.logo-text span{
+    display: block;
+    text-align: center;
+}
+.logo-podtext{
+    position: relative;
+    display: inline-block;
+    font-family: 'Comfortaa';
+    font-size: 7px;
+    text-transform: uppercase;
+    color: #888888;
+    line-height: 1;
+}
+.pt10{
+    padding-top: 10px !important;
+}
+.pn{
+    padding: 0 !important;
+}
+.mn{
+    margin: 0 !important;
+}
+.fl{
+    float: left;
+}
+.border-bottom{
+    border-bottom: 4px solid #ccc;
+}
+a{
+    outline: 0 !important;
+}
+.polozka-menu{
+    color: #333 !important;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 21px !important;
+}
+ul .light-green:hover,
+ul .light-green:focus{
+    background-color: rgba(191,255,0, 1) !important;
+    color: #fff !important;
+}
+ul .orange:hover,
+ul .orange:focus{
+    background-color: rgba(237,165,0, 0.8) !important;
+    color: #fff !important;
+}
+ul .blue:hover,
+ul .blue:focus{
+    background-color: rgba(12,145,255, 0.8) !important;
+    color: #fff !important;
+}
+ul .vio:hover,
+ul .vio:focus{
+    background-color: rgba(213,36,193, 0.8) !important;
+    color: #fff !important;
+}
