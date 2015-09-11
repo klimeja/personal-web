@@ -15,22 +15,60 @@
 
     <link href='https://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'></head>
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin-ext,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin-ext,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function(){
+            $( "#violet" ).animate({ "right": "+=32%", "opacity": 1 }, 1500 );
+            $( "#green" ).animate({ "left": "+=32%", "opacity": 1 }, 1500 );
+            setTimeout(function(){$("#light-green").animate({ "top": "+=176px", "opacity": 1},1500);},500);
+            setTimeout(function(){$("#orange").animate({ "left": "+=31.2%", "opacity": 1 }, 1500 );},850);
+            setTimeout(function(){$("#blue").animate({ "right": "+=31.7%", "opacity": 1 }, 1500 );},850);
+            setTimeout(function(){
+                $("#light-green").animate({"opacity": 0},1000);
+                $("#green").animate({"opacity": 0},1000);
+                $("#orange").animate({"opacity": 0},1000);
+                $("#blue").animate({"opacity": 0},1000);
+                $("#violet").animate({"opacity": 0},1000);
+                $("#diamant-big").animate({"opacity": 1},1000);
+            },2300);
+        setTimeout(function(){
+            document.getElementById("light-green").style.display="none";
+            document.getElementById("green").style.display="none";
+            document.getElementById("orange").style.display="none";
+            document.getElementById("blue").style.display="none";
+            document.getElementById("violet").style.display="none";
+        },3000)
+        setTimeout(function(){
+            $("#diamant-big").animate({"top": "-55px", "left": "16px"},1500);
+            $("#diamant").animate({"heigth": "50px", "width": "56px"},1500);
+        },3300);
+        setTimeout(function(){
+            document.getElementById("diamant-big").style.display = "none";
+            document.getElementById("logo-small").style.display = "block";
+        },4800);
+        setTimeout(function(){$('#logo').addClass('animated flipOutY');},4850);
+        setTimeout(function(){
+            $('#logo').removeClass('flipOutY');
+            $('#logo').addClass('flipInY');
+        },5350);
+        setTimeout(function(){
+            $('#welcome').animate({"height": "500px"},700);
+        },5350);
+
         $("#logo").click(function() {
             $('#logo').addClass('flipOutY');
             setTimeout(function(){
                 $('#logo').removeClass('flipOutY');
                 $('#logo').addClass('flipInY');
-            },1000);
+            },500);
         });
     });
 </script>
 <body>
-<nav class="navbar border-bottom" id="menu">
+<nav class="navbar border-bottom mbn" id="menu">
     <div class="container-fluid">
         <div class="container">
             <div class="navbar-header">
@@ -40,7 +78,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <div id="logo" class="fl animated flipInY"><a href="#"><img src="img/logo-text-mimo.svg" height="50" width="56"></a></div>
+                <div id="logo" class="fl"><a href="#"><img class="dn"  id="logo-small" src="img/logo-text-mimo.svg" height="50" width="56"></a></div>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -53,5 +91,30 @@
         </div>
         </div>
 </nav>
+<div class="container-fluid relative">
+    <div class="welcome" id="welcome">
+        <h1 class="mn">CLAN</h1>
+    </div>
+    <div class="container relative">
+        <div class="text-center schovany diamant-big" id="diamant-big">
+            <img id="diamant" src="img/diamant-big.svg">
+        </div>
+        <div class="absolute violet schovany" id="violet">
+            <img src="img/violet.svg">
+        </div>
+        <div class="absolute green schovany" id="green">
+            <img src="img/green.svg">
+        </div>
+        <div class="absolute light-green-pic schovany" id="light-green">
+            <img src="img/light-green.svg">
+        </div>
+        <div class="absolute orange-pic schovany" id="orange">
+            <img src="img/orange.svg">
+        </div>
+        <div class="absolute blue-pic schovany" id="blue">
+            <img src="img/blue.svg">
+        </div>
+    </div>
+</div>
 </body>
 </html>

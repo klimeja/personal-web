@@ -39,6 +39,57 @@
 a{
     outline: 0 !important;
 }
+.dn{
+    display: none;
+}
+.mbn{
+    margin-bottom: 0 !important;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.violet{
+    top: 176px;
+    right: 0;
+}
+.green{
+    top: 176px;
+    left: 0;
+}
+.light-green-pic{
+    top: 0;
+    left: 41.45%;
+}
+.orange-pic{
+    top: 73px;
+    left: 0;
+}
+.blue-pic{
+    top: 73px;
+    right: 0;
+}
+.schovany{
+    opacity: 0;
+}
+.helikoptera{
+    top: 20%;
+    left: 5%;
+}
+.welcome{
+    width: 100%;
+    background-color: rgba(191,255,0,0.8);
+    text-align: center;
+    height: 0;
+}
+.welcome h1{
+    color: #fff;
+    font-size: 90px;
+    font-family: 'Titan One', cursive;
+    padding: 5% 0;
+}
 .polozka-menu{
     color: #333 !important;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -63,4 +114,9 @@ ul .vio:hover,
 ul .vio:focus{
     background-color: rgba(213,36,193, 0.8) !important;
     color: #fff !important;
+}
+.diamant-big{
+    position: absolute;
+    top: 0;
+    left: 356px;
 }
