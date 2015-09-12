@@ -55,11 +55,11 @@ a{
     top: 176px;
     right: 0;
 }
-.green{
+.green-pic{
     top: 176px;
     left: 0;
 }
-.light-green-pic{
+.light-green{
     top: 0;
     left: 41.45%;
 }
@@ -80,7 +80,7 @@ a{
 }
 .welcome{
     width: 100%;
-    background-color: rgba(191,255,0,0.8);
+    background-color: rgba(93,239,130, 1);
     text-align: center;
     height: 0;
 }
@@ -88,16 +88,17 @@ a{
     color: #fff;
     font-size: 90px;
     font-family: 'Titan One', cursive;
-    padding: 5% 0;
+    padding: 3% 0;
 }
 .polozka-menu{
     color: #333 !important;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 21px !important;
+    border-radius: 100px;
 }
-ul .light-green:hover,
-ul .light-green:focus{
-    background-color: rgba(191,255,0, 1) !important;
+ul .green:hover,
+ul .green:focus{
+    background-color: rgba(93,239,130, 1) !important;
     color: #fff !important;
 }
 ul .orange:hover,
@@ -119,4 +120,13 @@ ul .vio:focus{
     position: absolute;
     top: 0;
     left: 356px;
+}
+.bio-wrapper p{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 40%;
+    color: #fff;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 18px;
 }

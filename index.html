@@ -19,7 +19,15 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin-ext,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/colors.js"></script>
 <script>
+    function changeColor(){
+        $('#welcome').animate({backgroundColor: "#5def82"},5000);;
+        setTimeout(function(){$('#welcome').animate({backgroundColor: "#eda500"},5000)},15000);
+        setTimeout(function(){$('#welcome').animate({backgroundColor: "#0c91ff"},5000)},30000);
+        setTimeout(function(){$('#welcome').animate({backgroundColor: "#d524c1"},5000)},45000);
+        setTimeout(function(){changeColor()},60000);
+    }
     $(document).ready(function(){
             $( "#violet" ).animate({ "right": "+=32%", "opacity": 1 }, 1500 );
             $( "#green" ).animate({ "left": "+=32%", "opacity": 1 }, 1500 );
@@ -55,8 +63,11 @@
             $('#logo').addClass('flipInY');
         },5350);
         setTimeout(function(){
-            $('#welcome').animate({"height": "500px"},700);
+            $('#welcome').animate({"height": "400px"},700);
         },5350);
+        setTimeout(function () {
+            changeColor();
+        },8000);
 
         $("#logo").click(function() {
             $('#logo').addClass('flipOutY');
@@ -82,7 +93,7 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="polozka-menu light-green" href="#service-wrapper">CLAN</a></li>
+                    <li><a class="polozka-menu green" href="#service-wrapper">CLAN</a></li>
                     <li><a class="polozka-menu orange" href="#service-wrapper">REFERENCE</a></li>
                     <li><a class="polozka-menu blue" href="#service-wrapper">SLUŽBY</a></li>
                     <li><a class="polozka-menu vio" href="#about">KONTAKT</a></li>
@@ -91,9 +102,14 @@
         </div>
         </div>
 </nav>
-<div class="container-fluid relative">
+<div class="container-fluid relative pn">
     <div class="welcome" id="welcome">
         <h1 class="mn">CLAN</h1>
+        <div class="bio-wrapper">
+            <p class="pt10">
+                JSME DVA MLADÍ KREATIVNÍ KLUCI. NO DVA.. JEDEN MLADÝ A DRUHÝ RELATIVNĚ MLADÝ.
+            </p>
+        </div>
     </div>
     <div class="container relative">
         <div class="text-center schovany diamant-big" id="diamant-big">
@@ -102,10 +118,10 @@
         <div class="absolute violet schovany" id="violet">
             <img src="img/violet.svg">
         </div>
-        <div class="absolute green schovany" id="green">
+        <div class="absolute green-pic schovany" id="green">
             <img src="img/green.svg">
         </div>
-        <div class="absolute light-green-pic schovany" id="light-green">
+        <div class="absolute light-green schovany" id="light-green">
             <img src="img/light-green.svg">
         </div>
         <div class="absolute orange-pic schovany" id="orange">
