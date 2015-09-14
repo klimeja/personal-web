@@ -22,10 +22,18 @@
     <script src="js/colors.js"></script>
 <script>
     function changeColor(){
-        $('#welcome').animate({backgroundColor: "#5def82"},5000);;
+        $('#welcome').animate({backgroundColor: "#5def82"},5000);
+        setTimeout(function(){$('.service-wr').removeClass('vio-bc');
+                              $('.service-wr').addClass('green-bc')},5000);
         setTimeout(function(){$('#welcome').animate({backgroundColor: "#eda500"},5000)},15000);
+        setTimeout(function(){$('.service-wr').removeClass('green-bc');
+                              $('.service-wr').addClass('orange-bc')},20000);
         setTimeout(function(){$('#welcome').animate({backgroundColor: "#0c91ff"},5000)},30000);
+        setTimeout(function(){$('.service-wr').removeClass('orange-bc');
+            $('.service-wr').addClass('blue-bc')},35000);
         setTimeout(function(){$('#welcome').animate({backgroundColor: "#d524c1"},5000)},45000);
+        setTimeout(function(){$('.service-wr').removeClass('blue-bc');
+            $('.service-wr').addClass('vio-bc')},50000);
         setTimeout(function(){changeColor()},60000);
     }
     $(document).ready(function(){
@@ -63,11 +71,16 @@
             $('#logo').addClass('flipInY');
         },5350);
         setTimeout(function(){
-            $('#welcome').animate({"height": "400px"},700);
+            $('#welcome').animate({"minHeight": "400px"},700);
         },5350);
         setTimeout(function () {
             changeColor();
         },8000);
+        setTimeout(function(){
+            document.getElementById("service").style.display = "block";
+            $('#service').animate({'opacity': 1},700);
+            window.scrollTo(0,0);
+        },5350);
 
         $("#logo").click(function() {
             $('#logo').addClass('flipOutY');
@@ -104,12 +117,13 @@
 </nav>
 <div class="container-fluid relative pn">
     <div class="welcome" id="welcome">
-        <h1 class="mn">CLAN</h1>
+        <h1 class="mn"><img class="logo-header" src="img/diamant-white.svg">CLAN</h1>
         <div class="bio-wrapper">
             <p class="pt10">
-                JSME DVA MLADÍ KREATIVNÍ KLUCI. NO DVA.. JEDEN MLADÝ A DRUHÝ RELATIVNĚ MLADÝ.
+                Tvoříme produkty, co mají smysl.
             </p>
         </div>
+    </div>
     </div>
     <div class="container relative">
         <div class="text-center schovany  diamant-big" id="diamant-big">
@@ -131,6 +145,44 @@
             <img src="img/blue.svg">
         </div>
     </div>
+    <div class="container-fluid schovany dn" id="service">
+        <div class="container">
+            <div class="row">
+    <div class="col-sm-3 pn">
+        <div class="service-wr green-bc">
+            <img src="img/resposive.svg" height="70" width="100">
+            <h1>Moderní webové prezentace</h1>
+            <p>
+                Hezké,přehledné a responzivní webové stránky jsou dnes nedílnou součástí většiny  druhů podnikání, my Vám takové vytvoříme, navíc za přijatelnou cenu.
+            </p>
+
+        </div>
+    </div>
+        <div class="col-sm-3 pn">
+            <div class="service-wr green-bc">
+                <img src="img/app.svg" height="70" width="100">
+                <h1>Webové aplikace</h1>
+                <p>Maximálně se vynasnažíme Vám vytvořit webovou aplikaci na míru, tak aby vyhovovala všem Vašim požadavkům a Vy jste se v ní cítili jako doma.</p>
+            </div>
+        </div>
+                <div class="col-sm-3 pn">
+                    <div class="service-wr green-bc">
+                        <img src="img/handshake.svg" height="70" width="100">
+                        <h1>Spolupráce</h1>
+                        <p>Máte zajímavý projekt a nezbývá Vám na něj čas, nebo se Vám nedaří ho uskutečnit? Společnými silamy by se nám to mohlo povést lépe a rychleji, rádi proto s Vámi budeme spolupracovat.</p>
+
+                    </div>
+                </div>
+                <div class="col-sm-3 pn">
+            <div class="service-wr green-bc">
+                <img src="img/advice.svg" height="70" width="100">
+                <h1>Poradenství</h1>
+                <p>Pokud si nevíte s něčím, co se týká informačních technologií, rady, rádi Vám poradíme, nebo doporučíme někoho kdo Vám pomůže problém vyřešit.</p>
+
+        </div>
+    </div>
+</div>
+</div>
 </div>
 </body>
 </html>

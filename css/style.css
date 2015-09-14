@@ -30,6 +30,9 @@
 .mn{
     margin: 0 !important;
 }
+.mt50{
+    margin-top: 50px;
+}
 .fl{
     float: left;
 }
@@ -86,9 +89,10 @@ a{
 }
 .welcome h1{
     color: #fff;
-    font-size: 90px;
+    font-size: 200px;
     font-family: 'Titan One', cursive;
-    padding: 3% 0;
+    padding-top: 3%;
+    display: inline-block;
 }
 .polozka-menu{
     color: #333 !important;
@@ -128,5 +132,41 @@ ul .vio:focus{
     width: 40%;
     color: #fff;
     font-family: "Open Sans Condensed", sans-serif;
+    font-size: 30px;
+}
+.logo-header{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+.service-wr{
+    text-align: center;
+    padding: 20% 15px 0;
+    height: 350px;
+    cursor: pointer;
+}
+.service-wr h1{
+    font-family: 'Titan One', cursive;
+    font-size: 25px;
+}
+.service-wr p{
+    font-family: "Open Sans Condensed", sans-serif;
     font-size: 18px;
+    padding: 10px 5px;
+}
+.green-bc:hover,
+.green-bc:focus{
+    background-color: rgba(93,239,130, 0.4);
+}
+.orange-bc:hover,
+.orange-bc:focus{
+    background-color: rgba(237,165,0, 0.4);
+}
+.blue-bc:hover,
+.blue-bc:focus{
+    background-color: rgba(12,145,255, 0.4);
+}
+.vio-bc:hover,
+.vio-bc:focus{
+    background-color: rgba(213,36,193, 0.4);
 }
