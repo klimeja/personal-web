@@ -27,6 +27,9 @@
 .pn{
     padding: 0 !important;
 }
+.pn-52{
+    padding: 52px 0 0 !important;
+}
 .mn{
     margin: 0 !important;
 }
@@ -37,7 +40,8 @@
     float: left;
 }
 .border-bottom{
-    border-bottom: 4px solid #ccc;
+    -webkit-box-shadow: 0 3px 5px 2px #5C5C5C;
+    box-shadow: 0 3px 5px 2px #5C5C5C;
 }
 a{
     outline: 0 !important;
@@ -53,6 +57,13 @@ a{
 }
 .absolute{
     position: absolute;
+}
+.navbar {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 .violet{
     top: 176px;
