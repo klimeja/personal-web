@@ -1,3 +1,6 @@
+h1{
+    font-family: 'Titan One',cursive;
+}
 .logo-text{
     position: relative;
     font-family: "Bowlby One SC";
@@ -24,24 +27,34 @@
 .pt10{
     padding-top: 10px !important;
 }
+.pt30{
+    padding-top: 30px !important;
+}
 .pn{
     padding: 0 !important;
 }
-.pn-52{
+.pt52{
     padding: 52px 0 0 !important;
 }
 .mn{
     margin: 0 !important;
 }
 .mt50{
-    margin-top: 50px;
+    margin-top: 50px !important;
+}
+.mt5{
+    margin-top: 5px !important;
 }
 .fl{
     float: left;
 }
+.ma{
+    margin: auto !important;
+}
 .border-bottom{
     -webkit-box-shadow: 0 3px 5px 2px #5C5C5C;
     box-shadow: 0 3px 5px 2px #5C5C5C;
+    z-index: 80 !important;
 }
 a{
     outline: 0 !important;
@@ -94,7 +107,7 @@ a{
 }
 .welcome{
     width: 100%;
-    background-color: rgba(93,239,130, 1);
+    background-color: rgba(12,145,255, 1);
     text-align: center;
     height: 0;
 }
@@ -105,33 +118,23 @@ a{
     padding-top: 3%;
     display: inline-block;
 }
-.polozka-menu{
+.polozka-menu {
+    position: relative;
     color: #333 !important;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 21px !important;
-    border-radius: 100px;
-}
-ul .green:hover,
-ul .green:focus{
-    background-color: rgba(93,239,130, 1) !important;
-    color: #fff !important;
-}
-ul .orange:hover,
-ul .orange:focus{
-    background-color: rgba(237,165,0, 0.8) !important;
-    color: #fff !important;
+    border-radius: 100%;
+    border: 2px solid rgba(12,145,255, 0);
 }
 ul .blue:hover,
 ul .blue:focus{
-    background-color: rgba(12,145,255, 0.8) !important;
-    color: #fff !important;
+    border: 2px solid rgba(12,145,255, 0.8);
+    background-color: #fff !important;
 }
-ul .vio:hover,
-ul .vio:focus{
-    background-color: rgba(213,36,193, 0.8) !important;
-    color: #fff !important;
-}
+
 .diamant-big{
+    display: block;
+    z-index: 999;
     position: absolute;
     top: 71px;
     left: 356px;
@@ -152,7 +155,7 @@ ul .vio:focus{
 }
 .service-wr{
     text-align: center;
-    padding: 20% 15px 0;
+    padding: 20% 15px 20% 0;
     height: 350px;
     cursor: pointer;
 }
@@ -181,3 +184,125 @@ ul .vio:focus{
 .vio-bc:focus{
     background-color: rgba(213,36,193, 0.4);
 }
+
+.about{
+    color: rgb(12,145,255);
+    padding-bottom: 50px;
+}
+
+.about h1{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+.about-wr{
+    position: relative;
+    display: block;
+    color: #000;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 20px;
+    border: 5px solid rgb(0,0,0);
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    border-radius: 100%;
+    margin-top: 40px;
+}
+.about-wr:hover,
+.about-wr:focus,
+.about-wr:active{
+    border: 5px solid rgb(12,145,255);
+}
+.popis{
+    position: relative;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: "Open Sans Condensed", sans-serif !important;
+    font-size: 18px !important;
+    color: #fff !important;
+    font-style: normal !important;
+}
+.diamant-hover{
+    position: absolute;
+    display: block;
+    top: 62px;
+    left: 31px;
+    display: none;
+}
+.about-wr:hover > .diamant-hover,
+.about-wr:focus > .diamant-hover,
+.about-wr:active > .diamant-hover
+{
+    display: block;
+}
+.contact{
+    background-color: #000;
+}
+.form-wrapper{
+    margin: auto;
+    text-align: center;
+    padding: 18px 0 0;
+}
+.form-wrapper h2{
+    font-size: 32px;
+    padding: 0 0 5px;
+    color: rgb(12,145,255);
+    font-family: "Titan One",cursive
+}
+.form-wrapper .form{
+    display: block;
+    margin: auto;
+    width: 300px;
+    color: rgb(12,145,255);
+    text-align: center;
+}
+.form-wrapper .form tr{
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.form-wrapper .form td{
+    text-align: left;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 16px;
+}
+.form-wrapper .form td input{
+    width: 299px;
+    height: 38px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.form-wrapper .form td textarea{
+    width: 299px;
+    height: 118px;
+    resize: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.form-wrapper .contact{
+    margin: 23px auto 38px;
+}
+.blue-bt{
+    position: relative;
+    display: block;
+    margin: 77px auto 0;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(12,145,255);
+    text-transform: uppercase;
+    font-family: "Titan One", cursive;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 0 -3px #4d4d4d;
+    box-shadow: 0 1px 0 0 #4d4d4d;
+}
+.blue-bt:hover{
+    background-color:  rgba(12,145,255, 0.7);
+}
+
