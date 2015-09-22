@@ -1,5 +1,5 @@
 h1{
-    font-family: 'Titan One',cursive;
+    font-family: 'Poiret One',cursive;
 }
 .logo-text{
     position: relative;
@@ -105,18 +105,34 @@ a{
     top: 20%;
     left: 5%;
 }
-.welcome{
+/*#welcome{
     width: 100%;
+    background-image: url("../img/ipad.jpg");
     background-color: rgba(12,145,255, 1);
     text-align: center;
     height: 0;
+    display: none;
 }
-.welcome h1{
+*/
+.slider2{
+    font-size: 100px !important;
+    padding-top: 8.5%;
+    margin: auto;
+    width: 57%;
+}
+.slider3{
+    font-size: 100px !important;
+    width: 57%;
+    padding-top: 6.5% !important;
+    margin: auto;
+    color: #111 !important;
+}
+.swiper-slide h1{
     color: #fff;
     font-size: 200px;
-    font-family: 'Titan One', cursive;
-    padding-top: 3%;
-    display: inline-block;
+    font-family: 'Biryani', sans-serif;
+    padding-top: 8.5%;
+    margin-top: 3.5%;
 }
 .polozka-menu {
     position: relative;
@@ -128,7 +144,7 @@ a{
 }
 ul .blue:hover,
 ul .blue:focus{
-    border: 2px solid rgba(12,145,255, 0.8);
+    border: 2px solid rgba(0,0,0, 0.8);
     background-color: #fff !important;
 }
 
@@ -143,7 +159,7 @@ ul .blue:focus{
     position: relative;
     display: block;
     margin: auto;
-    width: 40%;
+    width: 30%;
     color: #fff;
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 30px;
@@ -152,6 +168,7 @@ ul .blue:focus{
     position: relative;
     display: inline-block;
     margin-right: 20px;
+    margin-top: -20px;
 }
 .service-wr{
     text-align: center;
@@ -160,7 +177,7 @@ ul .blue:focus{
     cursor: pointer;
 }
 .service-wr h1{
-    font-family: 'Titan One', cursive;
+    font-family: 'Poiret one', cursive;
     font-size: 25px;
 }
 .service-wr p{
@@ -176,9 +193,9 @@ ul .blue:focus{
 .orange-bc:focus{
     background-color: rgba(237,165,0, 0.4);
 }
-.blue-bc:hover,
-.blue-bc:focus{
-    background-color: rgba(12,145,255, 0.4);
+.black-bc:hover,
+.black-bc:focus{
+    background-color: rgba(0,0,0, 0.2);
 }
 .vio-bc:hover,
 .vio-bc:focus{
@@ -186,7 +203,7 @@ ul .blue:focus{
 }
 
 .about{
-    color: rgb(12,145,255);
+    color: rgb(0,0,0);
     padding-bottom: 50px;
 }
 
@@ -211,7 +228,7 @@ ul .blue:focus{
 .about-wr:hover,
 .about-wr:focus,
 .about-wr:active{
-    border: 5px solid rgb(12,145,255);
+    border: 5px solid rgb(0,0,0);
 }
 .popis{
     position: relative;
@@ -239,6 +256,11 @@ ul .blue:focus{
 .contact{
     background-color: #000;
 }
+.form tbody{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
 .form-wrapper{
     margin: auto;
     text-align: center;
@@ -247,35 +269,37 @@ ul .blue:focus{
 .form-wrapper h2{
     font-size: 32px;
     padding: 0 0 5px;
-    color: rgb(12,145,255);
-    font-family: "Titan One",cursive
+    color: rgb(255,255,255);
+    font-family: "Poiret One",cursive
 }
 .form-wrapper .form{
     display: block;
     margin: auto;
-    width: 300px;
-    color: rgb(12,145,255);
+    width: 100%;
+    color: rgb(255,255,255);
     text-align: center;
 }
 .form-wrapper .form tr{
     display: block;
     margin: auto;
     padding-bottom: 10px;
+    width: 100%;
 }
 .form-wrapper .form td{
     text-align: left;
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
+    width: 37%;
 }
 .form-wrapper .form td input{
-    width: 299px;
+    width: 100%;
     height: 38px;
     border: 1px solid #aaa;
     border-radius: 5px;
     padding-left: 5px;
 }
 .form-wrapper .form td textarea{
-    width: 299px;
+    width: 100%;
     height: 118px;
     resize: none;
     border: 1px solid #aaa;
@@ -290,11 +314,11 @@ ul .blue:focus{
     margin: 77px auto 0;
     width: 200px;
     height: 60px;
-    background-color: rgb(12,145,255);
+    background-color: rgb(255,255,255);
     text-transform: uppercase;
-    font-family: "Titan One", cursive;
+    font-family: "Poiret One", cursive;
     font-size: 16px;
-    color: #fff;
+    color: #000;
     border: none;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -303,6 +327,6 @@ ul .blue:focus{
     box-shadow: 0 1px 0 0 #4d4d4d;
 }
 .blue-bt:hover{
-    background-color:  rgba(12,145,255, 0.7);
+    background-color:  rgba(255,255,255, 0.7);
 }
 

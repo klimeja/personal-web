@@ -13,11 +13,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link href="css/ihover.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.css">
+    <style>
+        .swiper-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
 
     <link href='https://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'></head>
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Titan+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin-ext,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Biryani:700' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/colors.js"></script>
@@ -37,48 +53,57 @@
             $('.service-wr').addClass('vio-bc')},50000);
         setTimeout(function(){changeColor()},60000);
     }*/
-    $(document).ready(function(){
-            $( "#violet" ).animate({ "right": "+=32%", "opacity": 1 }, 1500 );
-            $( "#green" ).animate({ "left": "+=32%", "opacity": 1 }, 1500 );
-            setTimeout(function(){$("#light-green").animate({ "top": "+=176px", "opacity": 1},1500);},500);
-            setTimeout(function(){$("#orange").animate({ "left": "+=31.2%", "opacity": 1 }, 1500 );},850);
-            setTimeout(function(){$("#blue").animate({ "right": "+=31.7%", "opacity": 1 }, 1500 );},850);
-            setTimeout(function(){
-                $("#light-green").animate({"opacity": 0},1000);
-                $("#green").animate({"opacity": 0},1000);
-                $("#orange").animate({"opacity": 0},1000);
-                $("#blue").animate({"opacity": 0},1000);
-                $("#violet").animate({"opacity": 0},1000);
-                $("#diamant-big").animate({"opacity": 1},1000);
-            },2300);
-        setTimeout(function(){
-            document.getElementById("light-green").style.display="none";
-            document.getElementById("green").style.display="none";
-            document.getElementById("orange").style.display="none";
-            document.getElementById("blue").style.display="none";
-            document.getElementById("violet").style.display="none";
-        },3000)
-        setTimeout(function(){
-            $("#diamant-big").animate({"top": "-51px", "left": "16px"},1500);
-            $("#diamant").animate({"heigth": "50px", "width": "56px"},1500);
-        },3300);
-        setTimeout(function(){
+    $(document).ready(function() {
+        $("#violet").animate({"right": "+=32%", "opacity": 1}, 1500);
+        $("#green").animate({"left": "+=32%", "opacity": 1}, 1500);
+        setTimeout(function () {
+            $("#light-green").animate({"top": "+=176px", "opacity": 1}, 1500);
+        }, 500);
+        setTimeout(function () {
+            $("#orange").animate({"left": "+=31.2%", "opacity": 1}, 1500);
+        }, 850);
+        setTimeout(function () {
+            $("#blue").animate({"right": "+=31.7%", "opacity": 1}, 1500);
+        }, 850);
+        setTimeout(function () {
+            $("#light-green").animate({"opacity": 0}, 1000);
+            $("#green").animate({"opacity": 0}, 1000);
+            $("#orange").animate({"opacity": 0}, 1000);
+            $("#blue").animate({"opacity": 0}, 1000);
+            $("#violet").animate({"opacity": 0}, 1000);
+            $("#diamant-big").animate({"opacity": 1}, 1000);
+        }, 2300);
+        setTimeout(function () {
+            document.getElementById("light-green").style.display = "none";
+            document.getElementById("green").style.display = "none";
+            document.getElementById("orange").style.display = "none";
+            document.getElementById("blue").style.display = "none";
+            document.getElementById("violet").style.display = "none";
+        }, 3000)
+        setTimeout(function () {
+            $("#diamant-big").animate({"top": "0px", "left": "16px"}, 1500);
+            $("#diamant").animate({"heigth": "50px", "width": "56px"}, 1500);
+        }, 3300);
+        setTimeout(function () {
             document.getElementById("diamant-big").style.display = "none";
             document.getElementById("logo-small").style.display = "block";
-        },4800);
-        setTimeout(function(){$('#logo').addClass('animated flipOutY');},4850);
-        setTimeout(function(){
+        }, 4800);
+        setTimeout(function () {
+            $('#logo').addClass('animated flipOutY');
+        }, 4850);
+        setTimeout(function () {
             $('#logo').removeClass('flipOutY');
             $('#logo').addClass('flipInY');
-        },5350);
-        setTimeout(function(){
-            $('#welcome').animate({"minHeight": "400px"},700);
-        },5350);
-        setTimeout(function(){
-            $('.content').css('display','block');
-            $('.content').animate({'opacity': 1},200);
-            window.scrollTo(0,0);
-        },6000)
+        }, 5350);
+        setTimeout(function () {
+            $('#welcome').css({"display": "block"});
+            $('#welcome').animate({"height": "600px"}, 700);
+        }, 5350);
+        setTimeout(function () {
+            $('.content').css('display', 'block');
+            $('.content').animate({'opacity': 1}, 200);
+            window.scrollTo(0, 0);
+        }, 6000)
         /*setTimeout(function () {
             changeColor();
         },8000);*/
@@ -90,8 +115,10 @@
                 $('#logo').addClass('flipInY');
             },500);
         });
-    });
-</script>
+       });
+    </script>
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
 <body>
 <nav class="navbar border-bottom" id="menu">
     <div class="container-fluid">
@@ -117,16 +144,41 @@
         </div>
         </div>
 </nav>
-<div class="container-fluid pt52">
-    <div class="welcome" id="welcome">
-        <h1 class="mn"><img class="logo-header" src="img/diamant-white.svg">CLAN</h1>
-        <div class="bio-wrapper">
-            <p class="pt10">
-                Tvoříme produkty, co mají smysl.
-            </p>
+<div class="swiper-container" id="welcome">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('img/slider3.jpg')">
+            <h1><img class="logo-header" src="img/diamant-white.svg">CLAN</h1>
+            <div class="bio-wrapper">
+                <p class="pt10">
+                    Tvoříme produkty, co mají smysl.
+                </p>
+            </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url('img/slider2.jpg')">
+            <h1 class="slider2">STYL A ELEGANCE</h1>
+            <div class="bio-wrapper">
+                <p class="pt10">
+                    Elegantní vzhled a moderní webové stránky, za nejlepší ceny.
+                </p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="swiper-slide" style="background-image: url('img/slider4.jpg')">
+                <h1 class="slider3">KVALITA A SPOLEHLIVOST</h1>
+                <div class="bio-wrapper">
+                    <p class="pt10" style="color: #111">
+                        Odevzdáme Vám jen produkt, který bude dokončený a kvalitní. Maximálně se snažíme dodržovat domluvené termíny.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
     <div class="container relative">
         <div class="text-center schovany  diamant-big" id="diamant-big">
             <img id="diamant" src="img/diamant-big.svg">
@@ -151,7 +203,7 @@
         <div class="container">
             <div class="row">
     <div class="col-sm-3 pn">
-        <div class="service-wr blue-bc">
+        <div class="service-wr black-bc">
             <img src="img/resposive.svg" height="70" width="100">
             <h1>Moderní webové prezentace</h1>
             <p>
@@ -161,24 +213,24 @@
         </div>
     </div>
         <div class="col-sm-3 pn">
-            <div class="service-wr blue-bc">
+            <div class="service-wr black-bc">
                 <img src="img/blog.svg" height="70" width="100">
-                <h1>Osobní blog</h1>
+                <h1>Osobní blog</h1><br>
                 <p>Vypracujeme Vám přehledný a originální blog, kde budete moci sdílet své myšlenky s každým kdo se pohybuje na internetu a časem si třeba i něco přivydělat.</p>
             </div>
         </div>
                 <div class="col-sm-3 pn">
-                    <div class="service-wr blue-bc">
+                    <div class="service-wr black-bc">
                         <img src="img/handshake.svg" height="70" width="100">
-                        <h1>Spolupráce</h1>
+                        <h1>Spolupráce</h1><br>
                         <p>Máte zajímavý projekt a nezbývá Vám na něj čas, nebo se Vám nedaří ho uskutečnit? Společnými silami by se nám to mohlo povést lépe a rychleji. Rádi proto s Vámi budeme spolupracovat.</p>
 
                     </div>
                 </div>
                 <div class="col-sm-3 pn">
-            <div class="service-wr blue-bc">
+            <div class="service-wr black-bc">
                 <img src="img/advice.svg" height="70" width="100">
-                <h1>Poradenství</h1>
+                <h1>Poradenství</h1><br>
                 <p>Pokud si nevíte s něčím, co se týká informačních technologií  rady, rádi Vám poradíme, nebo doporučíme někoho, kdo Vám pomůže problém vyřešit.</p>
 
         </div>
@@ -274,6 +326,17 @@
             </div>
         </div>
     </div>
-</div>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+    });
+</script>
 </body>
 </html>
